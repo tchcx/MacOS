@@ -42,17 +42,18 @@ alias brew="sudo -Hu homebrew brew"
 - Before updating **sudoers**
 ![image](https://github.com/user-attachments/assets/2955e909-5392-457e-8bd2-ba8c1c47721e)
 
-- Update **sudoers** so no-admin users can still use homebrew (the user) via sudo
+- Update **sudoers** so non-admin users can still use homebrew (the user) via sudo
 ```
 # loki can run all commands as homebrew (user)
 # we could lock this down more if needed
-# but homebrew isn't a user anyway
+# but homebrew isn't an admin user anyway
 loki            ALL=(homebrew) ALL
 ```
 
 - After updating **sudoers**
 <img width="859" alt="image" src="https://github.com/user-attachments/assets/0495801d-9fa4-4244-9165-1e996f25b177" />
 
-
+- Other users can use it, yay! Make sure brew is in everyone's $PATH
+<img width="697" alt="image" src="https://github.com/user-attachments/assets/396deab5-f329-486d-856c-f1507f0d194b" />
 
 
