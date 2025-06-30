@@ -48,6 +48,9 @@ alias brew="sudo -Hu homebrew brew"
 # we could lock this down more if needed
 # but homebrew isn't an admin user anyway
 loki            ALL=(homebrew) ALL
+
+# To allow Powershell to be installed
+homebrew        ALL= (ALL) NOPASSWD:SETENV: /usr/sbin/installer
 ```
 
 - After updating **sudoers**
