@@ -59,4 +59,6 @@ homebrew        ALL= (ALL) NOPASSWD:SETENV: /usr/sbin/installer
 - Other users can use it, yay! Make sure brew is in everyone's $PATH
 <img width="697" alt="image" src="https://github.com/user-attachments/assets/396deab5-f329-486d-856c-f1507f0d194b" />
 
+- Hide user account from login screen (inconsistently, in my experiennce):
+sudo dscl . create /Users/homebrew IsHidden 1
 
